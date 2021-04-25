@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" group="android" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1119431045/firebase_auth.iml" filepath="$PROJECT_DIR$/.idea/modules/-1119431045/firebase_auth.iml" group="android/firebase_auth" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-688925366/firebase_core.iml" filepath="$PROJECT_DIR$/.idea/modules/-688925366/firebase_core.iml" group="android/firebase_core" />
     </modules>
   </component>
 </project>
