@@ -41,7 +41,6 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return StreamBuilder(
         stream: widget.auth.onAuthStateChanged,
-        // ignore: missing_return
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             User user = snapshot.data;
@@ -56,6 +55,12 @@ class _LandingPageState extends State<LandingPage> {
               onSignOut: () => _updateUser(null),
             );
 
+          } else {
+            return Scaffold(
+              body: Center(
+                child: CircularProgressIndicator(),
+              ),
+            );
           }
         }
     );
