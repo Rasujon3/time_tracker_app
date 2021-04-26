@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2dadc12-bd48-4180-988d-49e72e55bc7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/sign_in/sign_in_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/sign_in/sign_in_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,22 +72,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="758" height="202" key="GridCell.Tab.0.bottom" timestamp="1619449712648">
+    <state width="758" height="202" key="GridCell.Tab.0.bottom" timestamp="1619465085337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="758" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619449712648" />
-    <state width="758" height="202" key="GridCell.Tab.0.center" timestamp="1619449712648">
+    <state width="758" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619465085337" />
+    <state width="758" height="202" key="GridCell.Tab.0.center" timestamp="1619465085336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="758" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619449712648" />
-    <state width="758" height="202" key="GridCell.Tab.0.left" timestamp="1619449712647">
+    <state width="758" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619465085336" />
+    <state width="758" height="202" key="GridCell.Tab.0.left" timestamp="1619465085333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="758" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619449712647" />
-    <state width="758" height="202" key="GridCell.Tab.0.right" timestamp="1619449712648">
+    <state width="758" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619465085333" />
+    <state width="758" height="202" key="GridCell.Tab.0.right" timestamp="1619465085337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="758" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619449712648" />
+    <state width="758" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619465085337" />
     <state x="100" y="100" width="636" height="624" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1619442682546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
