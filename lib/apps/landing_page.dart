@@ -15,7 +15,7 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<User>(
-        stream: auth.onAuthStateChanged,
+        stream: auth.onAuthStateChanged, // facebook auth
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.active) {
             User user = snapshot.data;
