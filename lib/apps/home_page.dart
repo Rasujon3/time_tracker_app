@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:time_tracker_app/common_widgets/platform_alert_dialog.dart';
 import 'package:time_tracker_app/services/auth.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,6 +12,17 @@ class HomePage extends StatelessWidget {
       await auth.signOut();
     } catch (e) {
       print(e.toString());
+    }
+  }
+
+  Future<void> _confirmSignOut(BuildContext context) async {
+    final didRequestSignOut = await PlatformAlertDialog(
+      title: 'Logout',
+      content: 'Are you sure that you want to logout?',
+      defaultActionText: 'Logout',
+    ).show(context);
+    if (didRequestSignOut == true) {
+      _signOut();
     }
   }
 
@@ -28,7 +40,7 @@ class HomePage extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            onPressed: _signOut,
+            onPressed: () => _confirmSignOut(context),
           ),
         ],
       ),
