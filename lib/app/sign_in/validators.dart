@@ -9,3 +9,8 @@ class NonEmplyStringValidator implements StringValidator {
 
   }
 }
+
+class EmailAndPasswordValidators {
+  final StringValidator emailValidator = NonEmplyStringValidator();
+  final StringValidator passwordValidator = NonEmplyStringValidator();
+}
