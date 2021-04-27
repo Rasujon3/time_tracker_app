@@ -51,8 +51,11 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
   }
 
   void _emailEditingComplete() {
+    final newFocus = widget.emailValidator.isValid(_email)
+        ? _passwordFocusNode
+        : _emailFocusNode;
     // print('Email Editing complete');
-    FocusScope.of(context).requestFocus(_passwordFocusNode);
+    FocusScope.of(context).requestFocus(newFocus);
   }
 
   void _toggleFormType() {
@@ -74,8 +77,9 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
         ? 'Need an account? Register'
         : 'Have an account? Sign in';
     bool submitEnabled = widget.emailValidator.isValid(_email) &&
-        widget.passwordValidator.isValid(_password) && !_isloading;
-        // _email.isNotEmpty && _password.isNotEmpty;
+        widget.passwordValidator.isValid(_password) &&
+        !_isloading;
+    // _email.isNotEmpty && _password.isNotEmpty;
     return [
       _buildEmailTextField(),
       SizedBox(height: 8.0),
@@ -94,7 +98,8 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
   }
 
   TextField _buildPasswordTextField() {
-    bool showErrorText = _submitted &&  !widget.passwordValidator.isValid(_password);
+    bool showErrorText =
+        _submitted && !widget.passwordValidator.isValid(_password);
     return TextField(
       controller: _passwordController,
       focusNode: _passwordFocusNode,
