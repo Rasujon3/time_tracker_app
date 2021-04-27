@@ -43,6 +43,20 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
       Navigator.of(context).pop();
     } catch (e) {
       print(e.toString());
+      showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: Text('Sign In Error'),
+              content: Text(e.toString()),
+              actions: [
+                FlatButton(
+                  onPressed: (){},
+                  child: Text('OK'),
+                ),
+              ],
+            );
+          });
     } finally {
       setState(() {
         _isloading = false;
