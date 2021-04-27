@@ -5,8 +5,8 @@ import 'package:time_tracker_app/services/auth.dart';
 enum EmailSignInFormType { signIn, register }
 
 class EmailSignInForm extends StatefulWidget {
-
   EmailSignInForm({@required this.auth});
+
   final AuthBase auth;
 
   @override
@@ -18,20 +18,29 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
 
   final TextEditingController _passwordController = TextEditingController();
 
+  String get _email => _emailController.text;
+
+  String get _password => _passwordController.text;
   EmailSignInFormType _formType = EmailSignInFormType.signIn;
 
-  void _submit() {
-    // TODO: print email and password
-    // print(email);
-    // print(password);
-    print(
-        'Email: ${_emailController.text}, password: ${_passwordController.text}');
+  void _submit() async {
+    try {
+      if (_formType == EmailSignInFormType.signIn) {
+        await widget.auth.signInWithEmailAndPassword(_email, _password);
+      } else {
+        await widget.auth.createUserWithEmailAndPassword(_email, _password);
+      }
+      Navigator.of(context).pop();
+    } catch (e) {
+      print(e.toString());
+    }
   }
 
   void _toggleFormType() {
     setState(() {
-      _formType = _formType == EmailSignInFormType.signIn ?
-          EmailSignInFormType.register : EmailSignInFormType.signIn;
+      _formType = _formType == EmailSignInFormType.signIn
+          ? EmailSignInFormType.register
+          : EmailSignInFormType.signIn;
     });
     _emailController.clear();
     _passwordController.clear();
