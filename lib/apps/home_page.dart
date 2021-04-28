@@ -1,9 +1,7 @@
 
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:time_tracker_app/common_widgets/platform_alert_dialog.dart';
-import 'package:time_tracker_app/services/auth.dart';
 import 'package:time_tracker_app/services/auth_provider.dart';
 
 class HomePage extends StatelessWidget {

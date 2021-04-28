@@ -1,10 +1,8 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:time_tracker_app/app/sign_in/validators.dart';
 import 'package:time_tracker_app/common_widgets/form_submit_button.dart';
 import 'package:time_tracker_app/common_widgets/platform_alert_dialog.dart';
-import 'package:time_tracker_app/services/auth.dart';
 import 'package:time_tracker_app/services/auth_provider.dart';
 
 enum EmailSignInFormType { signIn, register }
