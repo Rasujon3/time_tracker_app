@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 import 'package:time_tracker_app/common_widgets/platform_alert_dialog.dart';
 import 'package:time_tracker_app/services/auth.dart';
