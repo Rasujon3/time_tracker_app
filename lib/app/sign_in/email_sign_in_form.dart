@@ -29,6 +29,16 @@ class _EmailSignInFormState extends State<EmailSignInForm> {
   bool _submitted = false;
   bool _isloading = false;
 
+  @override
+  void dispose() {
+    // print('Disposed called');
+    _emailController.dispose();
+    _passwordController.dispose();
+    _emailFocusNode.dispose();
+    _passwordFocusNode.dispose();
+    super.dispose();
+  }
+
   void _submit() async {
     setState(() {
       _submitted = true;
